@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form-inline mt-5">
+            <input type="number" id="bar-code" class="form-control mr-2 mt-2" placeholder="BarCode">
+            <input type="text" id="p-name" class="form-control mr-2 mt-2" placeholder="Product Name">
+            <input type="number" id="buy-price" class="form-control mr-2 mt-2" placeholder="Buy Price">
+            <input type="number" id="sell-price" class="form-control mr-2 mt-2" placeholder="Sell Price">
+            <input type="number" id="Quantity" class="form-control mr-2 mt-2" placeholder="Quantity">
+            <input type="date" id="expiry" class="form-control mr-2 mt-2" placeholder="Expire Date">
+            <button type="button" class="btn btn-primary mr-2 mt-2" id="btn-add">Add New</button>
+            <button type="button" class="btn btn-success mt-2" id="btn-update">Update</button>
+        </form>
+
+        <table class="table table-striped mt-md-5">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>BarCode</th>
+                    <th>Product Name</th>
+                    <th>Buy Price</th>
+                    <th>Sell Price</th>
+                    <th>Quantity</th>
+                    <th>Item Total</th>
+                    <th>Expire Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+
+        <label for="total">Total Price :</label>
+        <input type="text" class="total form-control col-2 mb-2" disabled>
+
+        <label for="type">Discount type :</label>
+        <select name="disc-type" id="type" class="form-control col-2 mb-2">
+            <option value="fixed">Fixed</option>
+            <option value="percent">Percent %</option>
+        </select>
+
+        <label for="value">Discount Value :</label>
+        <input type="number" id="d-value" class="form-control col-2 mb-2">
+
+        <label for="grand">Grand Total :</label>
+        <input type="text" name="grand" class="form-control col-2 mb-2" id="grand" disabled>
+
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
